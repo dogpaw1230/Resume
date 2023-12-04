@@ -86,4 +86,22 @@ $(document).ready(function() {
   
     // 페이지 로딩 후 바로 실행
     showNextCharacter();
+
+    /* //////////////////////////////////////// */
+    /* //////////////////////////////////////// */
+    /* //////////////////////////////////////// */
+    /* //////////////////////////////////////// */
+    $(document).ready(function() {
+      $(".scrollToSection").on("click", function(e) {
+          e.preventDefault();
+  
+          var target = $(this).data("target");
+          var offset = $("#" + target).offset().top -100;
+  
+          $("html, body").animate({
+              scrollTop: offset
+          }, 1000); // 1000은 원하는 애니메이션 속도를 밀리초 단위로 나타냅니다.
+      });
+  });
+  
 });

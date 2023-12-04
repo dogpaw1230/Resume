@@ -1,16 +1,17 @@
 @font-face {
-    font-family: 'EF_jejudoldam';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Dovemayo_gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Dovemayo-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body, p {
     margin: 0;
@@ -120,6 +121,13 @@ ul {
     float: left;
     padding: 0 20px;
 }
+
+#content2,
+#content4 {
+    scroll-behavior: smooth;
+
+}
+
 
 /* ************************************************** */
 /* ********************** main ********************** */
@@ -272,27 +280,119 @@ ul {
 .content3 {
     height: 1000px;
     background-color: #113946;
-    padding-top: 100px;
+    padding-top: 30px;
     box-sizing: border-box;
+
+    font-family: 'Dovemayo_gothic';
+}
+
+/* .skill {
+    width: 1160px;
+    height: 800px;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+} */
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stackBox {
+    width: calc(1110px / 2);
+    height: calc(750px / 2);
+    background-color: white;
+
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+
+.stackBox:nth-of-type(odd) {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.stackBox > p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content3 > .w_1200 > p {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.stackBox div {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* background-color: skyblue; */
+    float: left;
+}
+
+.stackBox div:nth-of-type(odd) {
+    margin-right: 80px;
+    margin-bottom: 25px;
+}
+
+.stackBox div > img {
+    width: 80px;
+    height: 80px;
+}
+
+.stackBox div > p{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.content4 {
+    height: 1000px;
+    background-color: #BCA37F;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    font-family: 'Dovemayo_gothic';
+}
+
+.content4 > .w_1200 > p {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .pofol1, .pofol2 {
     width: 1160px;
     height: 800px;
     background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
+.title {
+    display: flex;
+    justify-content: space-between;
+}
 
+.title > p {
+    font-size: 30px;
+}
 
-
-
-
-
-.content4 {
+.content5 {
     height: 1000px;
-    background-color: #BCA37F;
-    padding-top: 100px;
+    background-color: #FFF2D8;
+    padding-top: 30px;
     box-sizing: border-box;
+    font-family: 'Dovemayo_gothic';
+}
+
+.content5 > .w_1200 > p {
+    font-size: 40px;
+    margin-bottom: 20px;
+
 }
 
 
