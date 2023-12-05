@@ -364,7 +364,7 @@ ul {
     color: white;
 }
 
-.pofol1, .pofol2 {
+.pofol1, .pofol2, .pofol3, .pofol4 {
     width: 1160px;
     height: 800px;
     background-color: white;
@@ -381,6 +381,29 @@ ul {
     font-size: 30px;
 }
 
+.contentsBox {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.captureBox {
+    width: 550px;
+    height: calc(550px * 1.15);
+    border: 10px solid #113946;
+    border-radius: 30px 0px 30px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    margin-top: 60px;
+}
+
+.captureBox > img {
+    width: 100%;
+}
+
+
 .content5 {
     height: 1000px;
     background-color: #FFF2D8;
@@ -389,10 +412,43 @@ ul {
     font-family: 'Dovemayo_gothic';
 }
 
-.content5 > .w_1200 > p {
+.content5 > .w_1200 > p,
+.content6 > .w_1200 > p,
+.content7 > .w_1200 > p,
+.content8 > .w_1200 > p  {
     font-size: 40px;
     margin-bottom: 20px;
+}
 
+.content6 > .w_1200 > p {
+    color: white;
+}
+
+.content6 {
+    height: 1000px;
+    background-color: #113946;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    font-family: 'Dovemayo_gothic';
+}
+
+.content7 {
+    height: 1000px;
+    background-color: #BCA37F;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    font-family: 'Dovemayo_gothic';
+}
+
+.content8 {
+    height: 1000px;
+    background-color: #FFF2D8;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    font-family: 'Dovemayo_gothic';
 }
 
 
