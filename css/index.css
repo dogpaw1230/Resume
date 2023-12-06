@@ -409,7 +409,8 @@ ul {
     height: 100%;
 }
 
-.explainBox {
+.explainBox,
+.explainBox1 {
     width: calc(100% - 550px - 50px);
     margin-top: 40px;
     margin-left: 50px;
@@ -417,51 +418,55 @@ ul {
     position: relative;
 }
 
-.explainBox > div:nth-of-type(1) {
+.explainBox > div:nth-of-type(1),
+.explainBox1 > div:nth-of-type(1) {
     margin-bottom: 25px;
 }
 
-.listStyle,
-.listStyle1,
-.listStyle2 {
+.listStyle11,
+.listStyle12,
+.listStyle13,
+.listStyle21,
+.listStyle22,
+.listStyle23 {
     font-size: 22px;
     margin-bottom: 25px;
 }
 
-.listStyle1 + div > div:nth-of-type(1) > p:nth-of-type(1) {
+.listStyle12 + div > div:nth-of-type(1) > p:nth-of-type(1){
     float: left;
     width: 48px;
     font-size: 20px;
     font-weight: bold;
+    /* line-height: 1.5; */
     margin-right: 5px;
 }
 
-.listStyle1 + div > p:nth-of-type(2){
-    font-size: 16px;
+.listStyle12 + div > div:nth-of-type(1) > p:nth-of-type(2){
     line-height: 1.5;
-    margin-bottom: 25px;
 }
 
-.listStyle1 + div > div:nth-of-type(2) > p:nth-of-type(1) {
+.listStyle12 + div > div:nth-of-type(2) > p:nth-of-type(1) {
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
-    margin-top: 10px;
     margin-right: 10px;
+    margin-top: 18px;
 
     float: left;
 }
 
-.listStyle1 + div > div:nth-of-type(2) > div {
+.listStyle12 + div > div:nth-of-type(2) > div {
+    /* 포트폴리오1의 기능 설명 부분 - 1. 여행 상품 어쩌구~ */
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 15px;
+    margin-top: 20px;
 
     /* background-color: skyblue; */
     float: left;
 }
 
-.listStyle2 + div > p:nth-of-type(1) {
+.listStyle13 + div > p:nth-of-type(1){
     float: left;
     width: 130px;
     font-size: 20px;
@@ -469,24 +474,25 @@ ul {
     margin-right: 5px;
 }
 
-.explainBox > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1) {
+.explainBox > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1),
+.explainBox1 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1)  {
     float: left;
     width: 130px;
     font-size: 20px;
     font-weight: bold;
     margin-right: 5px;
 
-}
-
-.listStyle2 + div > div:nth-of-type(1) > p:nth-of-type(1) {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 15px;
 }
 
 .explainBox > div:nth-of-type(3) {
     position: absolute;
-    top: 430px;
+    top: 450px;
+    left: 0;
+}
+
+.explainBox1 > div:nth-of-type(3) {
+    position: absolute;
+    top: 450px;
     left: 0;
 }
 
@@ -500,12 +506,90 @@ ul {
     gap: 10px;
 }
 
-.explainBox > div > div > span {
+.explainBox > div > div > span,
+.explainBox1 > div > div > span {
     font-size: 20px;
     padding: 5px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #FFF2D8;
+}
+
+
+/* ********************************************** */
+/* *************** explainBox1 구현 ************** */
+/* ********************************************** */
+
+.listStyle22 + div > div:nth-of-type(1) > p:nth-of-type(1) {
+    float: left;
+    width: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    /* line-height: 1.5; */
+    margin-right: 5px;
+}
+
+.listStyle22 + div > div:nth-of-type(1) > p:nth-of-type(2){
+    line-height: 1.5;
+}
+
+.listStyle22 + div > div:nth-of-type(2) > p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+
+.listStyle22 + div > div:nth-of-type(2) > div {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.listStyle22 + div > div:nth-of-type(2) > div > p:nth-of-type(odd) {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.listStyle22 + div > div:nth-of-type(2) > div > p:nth-of-type(2n) {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.listStyle23 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.listStyle23 + div {
+    display: flex;
+    gap: 20px;
+}
+
+.listStyle23 + div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#mainColor,
+#addColor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#mainColor {
+    background-color: #407f47;
+}
+
+#addColor {
+    background-color: #f0ebde;
 }
 
 button[id="blueHorizon"],
@@ -527,9 +611,6 @@ button[id="orriChungsan"] {
     right: 0;
     cursor: pointer;
 }
-
-
-
 
 .content5 {
     height: 1000px;
