@@ -409,30 +409,9 @@ ul {
     height: 100%;
 }
 
-.explainBox,
-.explainBox1 {
-    width: calc(100% - 550px - 50px);
-    margin-top: 40px;
-    margin-left: 50px;
-
-    position: relative;
-}
-
-.explainBox > div:nth-of-type(1),
-.explainBox1 > div:nth-of-type(1) {
-    margin-bottom: 25px;
-}
-
-.listStyle11,
-.listStyle12,
-.listStyle13,
-.listStyle21,
-.listStyle22,
-.listStyle23 {
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-
+/* ********************************************** */
+/* *************** explainBox 구현 ************** */
+/* ********************************************** */
 .listStyle12 + div > div:nth-of-type(1) > p:nth-of-type(1){
     float: left;
     width: 48px;
@@ -452,7 +431,7 @@ ul {
     line-height: 1.5;
     margin-right: 10px;
     margin-top: 18px;
-
+    
     float: left;
 }
 
@@ -461,7 +440,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 20px;
-
+    
     /* background-color: skyblue; */
     float: left;
 }
@@ -474,14 +453,46 @@ ul {
     margin-right: 5px;
 }
 
+/* ********************************************** */
+/* ************** 공통 explainBox 설정 ************ */
+/* ********************************************** */
+.listStyle11,
+.listStyle12,
+.listStyle13,
+.listStyle21,
+.listStyle22,
+.listStyle23,
+.listStyle31, 
+.listStyle32,
+.listStyle33 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.explainBox,
+.explainBox1,
+.explainBox2 {
+    width: calc(100% - 550px - 50px);
+    margin-top: 40px;
+    margin-left: 50px;
+
+    position: relative;
+}
+
+.explainBox > div:nth-of-type(1),
+.explainBox1 > div:nth-of-type(1),
+.explainBox2 > div:nth-of-type(1) {
+    margin-bottom: 25px;
+}
+
 .explainBox > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1),
-.explainBox1 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1)  {
+.explainBox1 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1),
+.explainBox2 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1)   {
     float: left;
     width: 130px;
     font-size: 20px;
     font-weight: bold;
     margin-right: 5px;
-
 }
 
 .explainBox > div:nth-of-type(3) {
@@ -491,6 +502,12 @@ ul {
 }
 
 .explainBox1 > div:nth-of-type(3) {
+    position: absolute;
+    top: 450px;
+    left: 0;
+}
+
+.explainBox2 > div:nth-of-type(3) {
     position: absolute;
     top: 450px;
     left: 0;
@@ -515,6 +532,13 @@ ul {
     background-color: #FFF2D8;
 }
 
+.explainBox2 > div > div > span {
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #FFF2D8;
+}
 
 /* ********************************************** */
 /* *************** explainBox1 구현 ************** */
@@ -592,25 +616,6 @@ ul {
     background-color: #f0ebde;
 }
 
-button[id="blueHorizon"],
-button[id="orriChungsan"] {
-    font-family: 'Dovemayo_gothic';
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 40px;
-    color: white;
-
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: #113946;
-
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    cursor: pointer;
-}
 
 .content5 {
     height: 1000px;
@@ -628,6 +633,10 @@ button[id="orriChungsan"] {
     margin-bottom: 20px;
 }
 
+/* ********************************************** */
+/* *************** explainBox2 구현 ************** */
+/* ********************************************** */
+
 .content6 > .w_1200 > p {
     color: white;
 }
@@ -640,6 +649,80 @@ button[id="orriChungsan"] {
 
     font-family: 'Dovemayo_gothic';
 }
+
+.listStyle32 + div > div:nth-of-type(1) > p:nth-of-type(1) {
+    float: left;
+    width: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    /* line-height: 1.5; */
+    margin-right: 5px;
+}
+
+.listStyle32 + div > div:nth-of-type(1) > p:nth-of-type(2){
+    line-height: 1.5;
+}
+
+.listStyle32 + div > div:nth-of-type(2) > p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+
+.listStyle32 + div > div:nth-of-type(2) > div {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.listStyle32 + div > div:nth-of-type(2) > div > p:nth-of-type(odd) {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.listStyle32 + div > div:nth-of-type(2) > div > p:nth-of-type(2n) {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.listStyle33 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.listStyle33 + div {
+    display: flex;
+    gap: 20px;
+}
+
+.listStyle33 + div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content7 {
     height: 1000px;
@@ -668,7 +751,25 @@ button[id="orriChungsan"] {
 
 
 
+button[id="blueHorizon"],
+button[id="orriChungsan"] {
+    font-family: 'Dovemayo_gothic';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    color: white;
 
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #113946;
+
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    cursor: pointer;
+}
 
 .footer {
     height: 300px;

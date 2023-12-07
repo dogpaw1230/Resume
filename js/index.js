@@ -45,7 +45,7 @@ $(document).ready(function() {
     /* //////////////////////////////////////// */
     /* //////////////////////////////////////// */
     /* //////////////////////////////////////// */
-
+    // 메인화면에 텍스트 나타내기
     let text = "EUNBEEN";
     let text1 = "함께 일하고 싶은 개발자가 되겠습니다!"
     let textContainer = document.getElementsByClassName('nameBox')[0];
@@ -91,17 +91,39 @@ $(document).ready(function() {
     /* //////////////////////////////////////// */
     /* //////////////////////////////////////// */
     /* //////////////////////////////////////// */
-    $(document).ready(function() {
-      $(".scrollToSection").on("click", function(e) {
-          e.preventDefault();
+    // 오른쪽 상단에 메뉴 누르면 해당 위치로 이동하기
+    $(".scrollToSection").on("click", function(e) {
+        e.preventDefault();
+
+        var target = $(this).data("target");
+        var offset = $("#" + target).offset().top -100;
+
+        $("html, body").animate({
+            scrollTop: offset
+        }, 1000); // 1000은 원하는 애니메이션 속도를 밀리초 단위로 나타냅니다.
+    });
   
-          var target = $(this).data("target");
-          var offset = $("#" + target).offset().top -100;
-  
-          $("html, body").animate({
-              scrollTop: offset
-          }, 1000); // 1000은 원하는 애니메이션 속도를 밀리초 단위로 나타냅니다.
-      });
-  });
+
+    /* //////////////////////////////////////// */
+    /* //////////////////////////////////////// */
+    /* //////////////////////////////////////// */
+    /* //////////////////////////////////////// */
+    // blueHorizon 버튼 누르면 깃허브로 이동하기
+    $("#blueHorizon").on("click", function() {
+      // 특정 사이트 주소를 여기에 입력
+      let targetUrl = "https://github.com/dogpaw1230/teamProject";
+
+      // 새 창에서 사이트 열기
+      window.open(targetUrl, "_blank");
+    })
+
+    // blueHorizon 버튼 누르면 깃허브로 이동하기
+    $("#orriChungsan").on("click", function() {
+      // 특정 사이트 주소를 여기에 입력
+      let targetUrl = "https://dogpaw1230.github.io/frontendProject/1.index.html";
+
+      // 새 창에서 사이트 열기
+      window.open(targetUrl, "_blank");
+    })
   
 });
