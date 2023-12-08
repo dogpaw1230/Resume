@@ -117,7 +117,7 @@ $(document).ready(function() {
       window.open(targetUrl, "_blank");
     })
 
-    // blueHorizon 버튼 누르면 깃허브로 이동하기
+    // 오르리청산 페이지 보기 버튼 누르면 깃허브로 이동하기
     $("#orriChungsan").on("click", function() {
       // 특정 사이트 주소를 여기에 입력
       let targetUrl = "https://dogpaw1230.github.io/frontendProject/1.index.html";
@@ -125,5 +125,45 @@ $(document).ready(function() {
       // 새 창에서 사이트 열기
       window.open(targetUrl, "_blank");
     })
+
+    // contact의 깃 버튼 누르면 깃허브로 이동하기
+    $(".git").on("click", function() {
+      // 특정 사이트 주소를 여기에 입력
+      let targetUrl = "https://github.com/dogpaw1230";
+
+      // 새 창에서 사이트 열기
+      window.open(targetUrl, "_blank");
+    })
+
+    // contact의 깃 버튼 누르면 깃허브로 이동하기
+    $(".blog").on("click", function() {
+      // 특정 사이트 주소를 여기에 입력
+      let targetUrl = "https://velog.io/@dogpaw1230";
+
+      // 새 창에서 사이트 열기
+      window.open(targetUrl, "_blank");
+    })
+
+    // 메일 팝업창
+    document.getElementById('showEmail').addEventListener('click', function() {
+      document.getElementById('emailPopup').style.display = 'block';
+    });
+  
+    document.getElementById('closeBtn').addEventListener('click', function() {
+      document.getElementById('emailPopup').style.display = 'none';
+    });
+
+    document.getElementById('emailAddress').addEventListener('click', copyEmail);
+
+    function copyEmail() {
+      var emailAddress = document.getElementById('emailAddress');
+      var range = document.createRange();
+      range.selectNode(emailAddress);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+      alert('메일주소가 복사되었습니다!');
+    }
   
 });

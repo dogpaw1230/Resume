@@ -29,6 +29,7 @@ ul {
 
 .w_1200 {
     width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
 }
 
@@ -367,7 +368,7 @@ ul {
     color: white;
 }
 
-.pofol1, .pofol2, .pofol3, .pofol4 {
+.pofol1, .pofol2, .pofol3, .pofol4, .pofol5 {
     width: 1160px;
     height: 800px;
     background-color: white;
@@ -741,6 +742,59 @@ ul {
 
     font-family: 'Dovemayo_gothic';
 }
+
+.git, .blog, .email {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 150px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.git > img, 
+.blog > img, 
+.email > img {
+    width: 100%;
+}
+
+.pofol5 > div:nth-of-type(2) {
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+#emailPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #FFF2D8;
+    border: 1px solid #113946;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    text-align: center;
+  }
+
+  #closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  #closeBtn + p {
+    font-size: 15px;
+  }
+
+  #emailAddress {
+    cursor: pointer;
+    font-size: 20px;
+    color: #113946;
+  }
 
 
 
