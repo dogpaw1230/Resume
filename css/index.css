@@ -192,6 +192,30 @@ ul {
     position: relative;
 }
 
+.education {
+    position: relative;
+}
+
+.education > div:nth-of-type(1) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.education > div:nth-of-type(2) {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: -50px;
+}
+
+.career {
+    padding-top: 100px;
+}
+
+
+
 .picture {
     width: 300px;
     height: 300px;
@@ -465,14 +489,18 @@ ul {
 .listStyle23,
 .listStyle31, 
 .listStyle32,
-.listStyle33 {
+.listStyle33,
+.listStyle41, 
+.listStyle42,
+.listStyle43 {
     font-size: 22px;
     margin-bottom: 25px;
 }
 
 .explainBox,
 .explainBox1,
-.explainBox2 {
+.explainBox2,
+.explainBox3 {
     width: calc(100% - 550px - 50px);
     margin-top: 40px;
     margin-left: 50px;
@@ -482,13 +510,15 @@ ul {
 
 .explainBox > div:nth-of-type(1),
 .explainBox1 > div:nth-of-type(1),
-.explainBox2 > div:nth-of-type(1) {
+.explainBox2 > div:nth-of-type(1),
+.explainBox3 > div:nth-of-type(1)  {
     margin-bottom: 25px;
 }
 
 .explainBox > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1),
 .explainBox1 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1),
-.explainBox2 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1)   {
+.explainBox2 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1),
+.explainBox3 > div:nth-of-type(3) > div:nth-of-type(2) > p:nth-of-type(1)   {
     float: left;
     width: 130px;
     font-size: 20px;
@@ -514,6 +544,12 @@ ul {
     left: 0;
 }
 
+.explainBox3 > div:nth-of-type(3) {
+    position: absolute;
+    top: 450px;
+    left: 0;
+}
+
 .explainBox > div:nth-of-type(3) > div {
     margin-bottom: 20px;
 }
@@ -533,7 +569,8 @@ ul {
     background-color: #FFF2D8;
 }
 
-.explainBox2 > div > div > span {
+.explainBox2 > div > div > span,
+.explainBox3 > div > div > span  {
     font-size: 20px;
     padding: 5px;
     box-sizing: border-box;
@@ -709,21 +746,13 @@ ul {
 }
 
 
+/* ********************************************** */
+/* *************** explainBox3 구현 ************** */
+/* ********************************************** */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content7 > .w_1200 > p {
+    color: white;
+}
 
 .content7 {
     height: 1000px;
@@ -732,6 +761,63 @@ ul {
     box-sizing: border-box;
 
     font-family: 'Dovemayo_gothic';
+}
+
+.listStyle42 + div > div:nth-of-type(1) > p:nth-of-type(1) {
+    float: left;
+    width: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    /* line-height: 1.5; */
+    margin-right: 5px;
+}
+
+.listStyle42 + div > div:nth-of-type(1) > p:nth-of-type(2){
+    line-height: 1.5;
+}
+
+.listStyle42 + div > div:nth-of-type(2) > p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-right: 10px;
+    margin-top: 18px;
+}
+
+.listStyle42 + div > div:nth-of-type(2) > div {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.listStyle42 + div > div:nth-of-type(2) > div > p:nth-of-type(odd) {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.listStyle42 + div > div:nth-of-type(2) > div > p:nth-of-type(2n) {
+    /* 포트폴리오2의 구현 포인트 설명 부분 - 1. 배너에 텍스트 어쩌구~ */
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.listStyle43 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.listStyle43 + div {
+    display: flex;
+    gap: 20px;
+}
+
+.listStyle43 + div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .content8 {
@@ -796,17 +882,10 @@ ul {
     color: #113946;
   }
 
-
-
-
-
-
-
-
-
-
 button[id="blueHorizon"],
-button[id="orriChungsan"] {
+button[id="orriChungsan"],
+button[id="curvature"],
+button[id="CNN"]{
     font-family: 'Dovemayo_gothic';
     font-size: 20px;
     font-weight: bold;

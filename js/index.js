@@ -126,6 +126,24 @@ $(document).ready(function() {
       window.open(targetUrl, "_blank");
     })
 
+    // curvature 버튼 누르면 깃허브로 이동하기
+    $("#curvature").on("click", function() {
+      // 특정 사이트 주소를 여기에 입력
+      let targetUrl = "https://github.com/dogpaw1230/Measurement_Algorithm";
+
+      // 새 창에서 사이트 열기
+      window.open(targetUrl, "_blank");
+    })
+
+    // CNN 버튼 누르면 깃허브로 이동하기
+    $("#CNN").on("click", function() {
+      // 특정 사이트 주소를 여기에 입력
+      let targetUrl = "https://github.com/dogpaw1230/Abnormal_Detection";
+
+      // 새 창에서 사이트 열기
+      window.open(targetUrl, "_blank");
+    })
+
     // contact의 깃 버튼 누르면 깃허브로 이동하기
     $(".git").on("click", function() {
       // 특정 사이트 주소를 여기에 입력
